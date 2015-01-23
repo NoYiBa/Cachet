@@ -50,7 +50,7 @@ class Incident extends Model implements TransformableInterface, PresenterInterfa
         'name',
         'status',
         'message',
-        'published_at'
+        'published_at',
     ];
 
     /**
@@ -94,7 +94,8 @@ class Incident extends Model implements TransformableInterface, PresenterInterfa
      *
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function scopeNotScheduled($query) {
+    public function scopeNotScheduled($query)
+    {
         return $query->whereRaw('DATE(published_at) = DATE(created_at)');
     }
 
@@ -105,7 +106,8 @@ class Incident extends Model implements TransformableInterface, PresenterInterfa
      *
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function scopeScheduled($query) {
+    public function scopeScheduled($query)
+    {
         return $query->whereRaw('DATE(published_at) <> DATE(created_at)');
     }
 
