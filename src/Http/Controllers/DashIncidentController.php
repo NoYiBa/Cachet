@@ -37,10 +37,12 @@ class DashIncidentController extends Controller
      */
     public function showAddIncident()
     {
+        $minScheduleDate = Carbon::now()->addDay()->format('d/m/Y');
         return View::make('dashboard.incidents.add')->with([
             'pageTitle'         => trans('dashboard.incidents.add.title').' - '.trans('dashboard.dashboard'),
             'components'        => Component::all(),
             'incidentTemplates' => IncidentTemplate::all(),
+            'minScheduleDate'   => $minScheduleDate,
         ]);
     }
 

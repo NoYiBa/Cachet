@@ -88,7 +88,8 @@
                         </div>
                         <div class="form-group">
                             <label>{{ trans('forms.incidents.scheduled') }}</label>
-                            <input type="text" rel="date" class="form-control" name="incident[published_date]" data-date-start-date="{{ date('d/m/Y') }}" />
+                            <input type="text" rel="date" class="form-control" name="incident[published_date]" data-date-start-date="{{ $minScheduleDate }}" />
+                            <span class="help-block">{{ trans('forms.incidents.scheduled-help') }}</span>
                         </div>
                     </fieldset>
 
