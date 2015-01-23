@@ -4,8 +4,63 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7f388e67b62f93a2298f701f263b461c",
+    "hash": "136cf8c95a41be44dbc9be589c08f0b9",
     "packages": [
+        {
+            "name": "cachethq/segment",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cachethq/Laravel-Segment.git",
+                "reference": "8bda2e46bbbdfe08593c6713ce6b060630572170"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cachethq/Laravel-Segment/zipball/8bda2e46bbbdfe08593c6713ce6b060630572170",
+                "reference": "8bda2e46bbbdfe08593c6713ce6b060630572170",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "~4.1",
+                "illuminate/support": "~4.1",
+                "php": ">=5.4.7",
+                "segmentio/analytics-php": "~1.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CachetHQ\\Segment\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Brooks",
+                    "email": "james@cachethq.io"
+                }
+            ],
+            "description": "Segment.com wrapper written for Laravel 4",
+            "keywords": [
+                "CachetHQ",
+                "Laravel Segment",
+                "api",
+                "cachet",
+                "framework",
+                "laravel",
+                "segment",
+                "segment.com",
+                "segment.io"
+            ],
+            "time": "2015-01-23 17:04:35"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "1.0.2",
@@ -224,16 +279,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.3.1",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "cf483685798a72c93bf4206e3dd6358ea07d64e7"
+                "reference": "2346085d2b027b233ae1d5de59b07440b9f288c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/cf483685798a72c93bf4206e3dd6358ea07d64e7",
-                "reference": "cf483685798a72c93bf4206e3dd6358ea07d64e7",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/2346085d2b027b233ae1d5de59b07440b9f288c8",
+                "reference": "2346085d2b027b233ae1d5de59b07440b9f288c8",
                 "shasum": ""
             },
             "require": {
@@ -244,6 +299,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": ">=3.7",
+                "predis/predis": "~0.8",
                 "satooshi/php-coveralls": "~0.6"
             },
             "type": "library",
@@ -289,7 +345,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2014-09-17 14:24:04"
+            "time": "2015-01-15 20:38:55"
         },
         {
             "name": "doctrine/collections",
@@ -631,16 +687,16 @@
         },
         {
             "name": "erusev/parsedown",
-            "version": "1.4.2",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "f08d017bcb452e5a82cc2069cca705d9e6e75da0"
+                "reference": "6ddb6b2b335dd0c37aeceaf2d26a11384d5f9605"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/f08d017bcb452e5a82cc2069cca705d9e6e75da0",
-                "reference": "f08d017bcb452e5a82cc2069cca705d9e6e75da0",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/6ddb6b2b335dd0c37aeceaf2d26a11384d5f9605",
+                "reference": "6ddb6b2b335dd0c37aeceaf2d26a11384d5f9605",
                 "shasum": ""
             },
             "type": "library",
@@ -666,24 +722,24 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2015-01-15 00:45:45"
+            "time": "2015-01-19 15:11:13"
         },
         {
             "name": "erusev/parsedown-extra",
-            "version": "0.3.0",
+            "version": "0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown-extra.git",
-                "reference": "f70d23c8d0b0dab5be005202b69956b5d5658a76"
+                "reference": "a2b8418b2ae272eb59ef8767bf45df80ab02f29c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/f70d23c8d0b0dab5be005202b69956b5d5658a76",
-                "reference": "f70d23c8d0b0dab5be005202b69956b5d5658a76",
+                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/a2b8418b2ae272eb59ef8767bf45df80ab02f29c",
+                "reference": "a2b8418b2ae272eb59ef8767bf45df80ab02f29c",
                 "shasum": ""
             },
             "require": {
-                "erusev/parsedown": "~1.2"
+                "erusev/parsedown": "~1.4"
             },
             "type": "library",
             "autoload": {
@@ -710,7 +766,7 @@
                 "parsedown",
                 "parser"
             ],
-            "time": "2015-01-10 13:53:42"
+            "time": "2015-01-22 13:11:06"
         },
         {
             "name": "fideloper/proxy",
@@ -874,20 +930,20 @@
         },
         {
             "name": "graham-campbell/markdown",
-            "version": "v2.0.7",
+            "version": "v2.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrahamCampbell/Laravel-Markdown.git",
-                "reference": "c85535e0c53efd44a6d3e9c09754a194c31edb41"
+                "reference": "9e74dff2d33a4c75bcd97e9529de498ed9af7c9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-Markdown/zipball/c85535e0c53efd44a6d3e9c09754a194c31edb41",
-                "reference": "c85535e0c53efd44a6d3e9c09754a194c31edb41",
+                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-Markdown/zipball/9e74dff2d33a4c75bcd97e9529de498ed9af7c9c",
+                "reference": "9e74dff2d33a4c75bcd97e9529de498ed9af7c9c",
                 "shasum": ""
             },
             "require": {
-                "erusev/parsedown-extra": "0.3.*",
+                "erusev/parsedown-extra": "0.6.*",
                 "illuminate/support": "~4.1",
                 "illuminate/view": "~4.1",
                 "php": ">=5.4.7"
@@ -926,7 +982,7 @@
                 "parsedown extra wrapper",
                 "parsedown wrapper"
             ],
-            "time": "2015-01-10 14:13:23"
+            "time": "2015-01-22 20:41:15"
         },
         {
             "name": "graham-campbell/security",
@@ -2106,6 +2162,51 @@
                 "laravel"
             ],
             "time": "2014-12-09 14:53:34"
+        },
+        {
+            "name": "segmentio/analytics-php",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/segmentio/analytics-php.git",
+                "reference": "db24fa9a2e1110570c338fea7a6f46bbb7ef105c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/segmentio/analytics-php/zipball/db24fa9a2e1110570c338fea7a6f46bbb7ef105c",
+                "reference": "db24fa9a2e1110570c338fea7a6f46bbb7ef105c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/Segment.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Segment.io <friends@segment.io>",
+                    "homepage": "https://segment.io/"
+                }
+            ],
+            "description": "Segmentio Analytics PHP Library",
+            "homepage": "https://segment.io/libraries/php",
+            "keywords": [
+                "analytics",
+                "analytics.js",
+                "segmentio"
+            ],
+            "time": "2015-01-07 07:11:38"
         },
         {
             "name": "stack/builder",
@@ -3404,16 +3505,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "f8d5d08c56de5cfd592b3340424a81733259a876"
+                "reference": "db32c18eba00b121c145575fcbcd4d4d24e6db74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/f8d5d08c56de5cfd592b3340424a81733259a876",
-                "reference": "f8d5d08c56de5cfd592b3340424a81733259a876",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/db32c18eba00b121c145575fcbcd4d4d24e6db74",
+                "reference": "db32c18eba00b121c145575fcbcd4d4d24e6db74",
                 "shasum": ""
             },
             "require": {
@@ -3426,7 +3527,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -3449,20 +3550,20 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2014-08-31 06:12:13"
+            "time": "2015-01-17 09:51:32"
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.4.1",
+            "version": "4.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "6a5e49a86ce5e33b8d0657abe145057fc513543a"
+                "reference": "e90575c2bb86290d57a262862dab1da125431576"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6a5e49a86ce5e33b8d0657abe145057fc513543a",
-                "reference": "6a5e49a86ce5e33b8d0657abe145057fc513543a",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e90575c2bb86290d57a262862dab1da125431576",
+                "reference": "e90575c2bb86290d57a262862dab1da125431576",
                 "shasum": ""
             },
             "require": {
@@ -3520,7 +3621,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-12-28 07:57:05"
+            "time": "2015-01-17 11:24:41"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -3944,11 +4045,14 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "cachethq/segment": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.4",
+        "ext-mbstring": "*",
         "ext-mcrypt": "*",
         "ext-openssl": "*"
     },
