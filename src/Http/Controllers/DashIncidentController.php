@@ -72,6 +72,7 @@ class DashIncidentController extends Controller
 
         if ($publishDate !== '') {
             $publishDate = Carbon::createFromFormat('d/m/Y', $publishDate);
+            $publishDate->setTime(0, 0, 0);
         } else {
             $publishDate = Carbon::now();
         }

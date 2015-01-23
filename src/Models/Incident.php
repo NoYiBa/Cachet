@@ -88,6 +88,28 @@ class Incident extends Model implements TransformableInterface, PresenterInterfa
     }
 
     /**
+     * Finds all incidents which have not been scheduled.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     *
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeNotScheduled($query) {
+        return $query->whereRaw('DATE(published_at) = DATE(created_at)');
+    }
+
+    /**
+     * Finds all incidents which have been scheduled.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     *
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeScheduled($query) {
+        return $query->whereRaw('DATE(published_at) <> DATE(created_at)');
+    }
+
+    /**
      * Returns a human readable version of the status.
      *
      * @return string

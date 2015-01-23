@@ -48,7 +48,7 @@ class HomeController extends Controller
 
         foreach (range(0, $incidentDays) as $i) {
             $date = $startDate->copy()->subDays($i);
-            $incidents = Incident::whereBetween('created_at', [
+            $incidents = Incident::notScheduled()->whereBetween('created_at', [
                 $date->format('Y-m-d').' 00:00:00',
                 $date->format('Y-m-d').' 23:59:59',
             ])->orderBy('created_at', 'desc')->get();
