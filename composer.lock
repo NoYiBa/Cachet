@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cachethq/Laravel-Segment.git",
-                "reference": "8bda2e46bbbdfe08593c6713ce6b060630572170"
+                "reference": "39121d7953cb91197f0474b9cf43ae198fca1e26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cachethq/Laravel-Segment/zipball/8bda2e46bbbdfe08593c6713ce6b060630572170",
-                "reference": "8bda2e46bbbdfe08593c6713ce6b060630572170",
+                "url": "https://api.github.com/repos/cachethq/Laravel-Segment/zipball/39121d7953cb91197f0474b9cf43ae198fca1e26",
+                "reference": "39121d7953cb91197f0474b9cf43ae198fca1e26",
                 "shasum": ""
             },
             "require": {
@@ -59,7 +59,7 @@
                 "segment.com",
                 "segment.io"
             ],
-            "time": "2015-01-23 17:04:35"
+            "time": "2015-01-23 22:49:00"
         },
         {
             "name": "classpreloader/classpreloader",
