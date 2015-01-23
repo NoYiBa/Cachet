@@ -97,6 +97,11 @@ body.status-page {
         }
 
         .panel {
+            .panel-heading {
+                h4 {
+                    margin-bottom: 0;
+                }
+            }
             .panel-body {
                 p {
                     margin: 0;
@@ -160,6 +165,10 @@ body.status-page {
                         top: 10px;
                         left: 11px;
                     }
+                    &.ion-calendar {
+                        top: 10px;
+                        left: 10px;
+                    }
                 }
                 &.status-1 {
                     color: $cachet_orange;
@@ -172,6 +181,9 @@ body.status-page {
                 }
                 &.status-4 {
                     color: $cachet_green;
+                }
+                &.status-scheduled {
+                    color: $cachet_red;
                 }
             }
             &.last:before {
